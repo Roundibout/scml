@@ -108,13 +108,15 @@ Whitespace after and before the grouping symbols, between commas, and between eq
 
 ## Usage
 
+### Lua
+
 To use SCML in Lua, require the parser module and call the `parse` function:
 
 ```lua
 local scml = require("src.scml")
 
 local text, meta = scml.parse("[bold]{Hello! :hand: }<br>Welcome!")
-print(text) -- Outputs "Hello   Welcome!"
+print(text) -- Outputs "Hello  Welcome!"
 print(meta) -- Contains symbols, commands, and blocks with positions and metadata
 ```
 
