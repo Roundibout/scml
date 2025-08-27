@@ -108,6 +108,23 @@ Whitespace after and before the grouping symbols, between commas, and between eq
 
 ## Usage
 
+### Games
+
+Here are a few examples of how SCML can be used in games:
+
+```scml
+W<stutter>-where's the [size = 10, color = green]{MONEY?}
+```
+```scml
+Press [font = Inputs]{:mouse1:} to interact.
+```
+```scml
+[sarcastic]{Oh,<pause> [bold]{really?}<pause> That’s [bold, wave = 5]{amazing.}}
+```
+
+#### Remember:
+There are no predetermined sets of symbols, commands, and modifiers that come with SCML. It's up to you to implement your own into your renderer.
+
 ### Lua
 
 To use SCML in Lua, require the parser module and call the `parse` function:
@@ -115,7 +132,7 @@ To use SCML in Lua, require the parser module and call the `parse` function:
 ```lua
 local scml = require("src.scml")
 
-local text, meta = scml.parse("[bold]{Hello! :hand: }<br>Welcome!")
+local text, meta = scml.parse("[bold]{Hello! :wave: }<br>Welcome!")
 print(text) -- Outputs "Hello  Welcome!"
 print(meta) -- Contains symbols, commands, and blocks with positions and metadata
 ```
