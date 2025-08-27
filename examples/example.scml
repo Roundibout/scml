@@ -1,0 +1,9 @@
+This is plain text
+This is a literal \\, you cannot see the backslash behind it in the final text
+This :symbol: is a symbol
+There's a <command> somewhere in here
+[]{This text is inside a block}
+[flag]{This text has been given a flag, which is usually used for properties like bold and italic}
+[field = value]{This text has been given a field, which is usually used for properties like font and size}
+[flag, field = value]{This text has been given both a flag and a field}
+[]{This block contains a []{nested block}}
